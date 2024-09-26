@@ -3,9 +3,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
 use Concrete\Core\Area\GlobalArea;
 use Concrete\Core\Support\Facade\Config;
-
 ?>
-
 
 <footer class="bg-red-500 text-white ">
     <div class="container mx-auto p-4 flex items-center justify-between">
@@ -21,3 +19,9 @@ use Concrete\Core\Support\Facade\Config;
         </nav>
     </div>
 </footer>
+</div>
+<script src="<?php echo $view->getThemePath(); ?>/js/app.js"></script>
+<?php Loader::element('footer_required'); ?>
+</body>
+
+</html>
