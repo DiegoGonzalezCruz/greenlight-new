@@ -2,6 +2,7 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 
 use Concrete\Core\Area\GlobalArea;
+
 use Concrete\Core\Localization\Localization;
 use Concrete\Core\Support\Facade\Config;
 ?>
@@ -17,7 +18,7 @@ use Concrete\Core\Support\Facade\Config;
 
 <body>
     <div class='<?= $c->getPageWrapperClass() ?>'>
-        <header class="bg-gray-800 text-white ">
+        <header class="bg-gradientGreenYelPink text-white ">
             <div class="container mx-auto p-4 flex items-center justify-between">
                 <h1 class="text-2xl font-bold">
                     <a href="<?php echo DIR_REL; ?>/"><?php echo h(Config::get('concrete.site')); ?></a>
