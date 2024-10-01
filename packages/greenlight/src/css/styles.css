@@ -1,9 +1,168 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --GO-green: #009247;
+  --GO-glow: #45ec6a;
+  --GO-outerspace: #1b2f33;
+  --GO-tan: #f9f5e8;
+  --GO-gold: #bc8823;
+  --white: #fff;
+  --gradient-green-yellow-pink: linear-gradient(
+    104deg,
+    #c3da38 0.21%,
+    #fb44b1 87.96%
+  );
+  --gradient-green-yellow-pink-1: linear-gradient(
+    326deg,
+    #38da7f -19.32%,
+    rgba(244, 237, 66, 0.99) 29.91%,
+    rgba(255, 67, 236, 0.65) 79.13%
+  );
+  --gradient-green-yellow: linear-gradient(
+    104deg,
+    #fbf55d 18.41%,
+    #38da7f 87.96%
+  );
+  --gradient-pink-yellow: linear-gradient(
+    113deg,
+    #e8eb59 -2.46%,
+    #fb44b1 98.77%
+  );
+  --gradient-teal-pink: linear-gradient(
+    116deg,
+    rgba(255, 67, 236, 1) -4.97%,
+    #15ffff 97.75%
+  );
+  --white: #fff;
+}
+
+@layer base {
+  /* Global default styles */
+  html {
+    font-family: "Open Sans", sans-serif;
+    color: #222;
+  }
+
+  /* Nav Text */
+  nav {
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 130%; /* 18.2px */
+  }
+
+  /* H1 Header */
+  h1 {
+    font-family: "Work Sans";
+    font-size: 95px;
+    font-weight: 800;
+    line-height: 140%; /* 133px */
+  }
+
+  /* H2 Header */
+  h2 {
+    font-family: "Work Sans";
+    font-size: 71px;
+    font-weight: 800;
+    line-height: 140%; /* 99.4px */
+  }
+
+  /* H3 Header */
+  h3 {
+    font-family: "Work Sans";
+    font-size: 53px;
+    font-weight: 800;
+    line-height: 140%; /* 74.2px */
+  }
+
+  /* H4 Header */
+  h4 {
+    font-family: "Work Sans";
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 140%; /* 56px */
+  }
+
+  /* H5 Header */
+  h5 {
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 160%; /* 38.4px */
+  }
+
+  /* H6 Subheader */
+  h6 {
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%; /* 25.6px */
+  }
+
+  /* Body Text */
+  p,
+  body {
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 165%; /* 28.05px */
+  }
+
+  /* Small Body Text */
+  small {
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 130%; /* 16.9px */
+  }
+
+  /* Overline Header Caps */
+  .overline {
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 160%; /* 24px */
+    letter-spacing: 2.25px;
+    text-transform: uppercase;
+  }
+
+  /* Mobile H1 Header */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 68px;
+      line-height: 140%; /* 95.2px */
+    }
+    h2 {
+      font-size: 51px;
+      line-height: 140%; /* 71.4px */
+    }
+    h3 {
+      font-size: 38px;
+      line-height: 140%; /* 53.2px */
+    }
+    h4 {
+      font-size: 29px;
+      line-height: 140%; /* 40.6px */
+    }
+    h5 {
+      font-size: 22px;
+      line-height: 140%; /* 30.8px */
+    }
+  }
+
+  /* Caps Header */
+  .caps-header {
+    font-family: "Work Sans Black";
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 130%; /* 58.5px */
+    text-transform: uppercase;
+  }
+}
 @layer utilities {
   .debug {
     border: 1px solid red;
@@ -14,5 +173,27 @@
   }
   .debug2 {
     border: 3px solid green;
+  }
+}
+
+@layer components {
+  .button {
+    display: flex;
+    width: auto;
+    height: 50px;
+    padding: 16px 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 75px;
+    background: var(--GO-Outerspace, #1b2f33);
+    color: var(--white, var(--White, #fff));
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 24px */
   }
 }

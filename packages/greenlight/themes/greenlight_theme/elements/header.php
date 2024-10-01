@@ -5,6 +5,8 @@ use Concrete\Core\Area\GlobalArea;
 
 use Concrete\Core\Localization\Localization;
 use Concrete\Core\Support\Facade\Config;
+
+
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo Localization::activeLanguage(); ?>">
@@ -14,11 +16,12 @@ use Concrete\Core\Support\Facade\Config;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo $view->getThemePath(); ?>/css/styles.css">
+
 </head>
 
 <body>
     <div class='<?= $c->getPageWrapperClass() ?>'>
-        <header class="bg-go-green text-white ">
+        <header class=" text-black bg-go-green ">
             <div class="container mx-auto p-4 flex items-center justify-between">
                 <h1 class="text-2xl font-bold">
                     <a href="<?php echo DIR_REL; ?>/"><?php echo h(Config::get('concrete.site')); ?></a>
@@ -30,8 +33,6 @@ use Concrete\Core\Support\Facade\Config;
                     ?>
                 </nav>
             </div>
-            <div class="bg-gradient-green-yellow bg-cover bg-center h-64 w-64">
-                <!-- Your content here -->
-            </div>
+
 
         </header>
