@@ -6,7 +6,7 @@ use Concrete\Core\Area\Area;
 
 <?php $this->inc('elements/header.php'); ?>
 
-<div id="app">
+<div id="app debug2">
     <main class="container mx-auto p-4">
         <?php
         $a = new Area('Main');

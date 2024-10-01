@@ -18,12 +18,11 @@ use Concrete\Core\Support\Facade\Config;
 
 <body>
     <div class='<?= $c->getPageWrapperClass() ?>'>
-        <header class="bg-gradientGreenYelPink text-white ">
+        <header class="bg-go-green text-white ">
             <div class="container mx-auto p-4 flex items-center justify-between">
                 <h1 class="text-2xl font-bold">
                     <a href="<?php echo DIR_REL; ?>/"><?php echo h(Config::get('concrete.site')); ?></a>
                 </h1>
-                hola header 1
                 <nav>
                     <?php
                     $a = new GlobalArea('Header Navigation');
@@ -31,4 +30,8 @@ use Concrete\Core\Support\Facade\Config;
                     ?>
                 </nav>
             </div>
+            <div class="bg-gradient-green-yellow bg-cover bg-center h-64 w-64">
+                <!-- Your content here -->
+            </div>
+
         </header>
