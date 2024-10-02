@@ -1,4 +1,4 @@
-<div class="  bg-[#C0BFBF]">
+<div class="bg-[#C0BFBF]">
     <h2> Buttons</h2>
     <div class="flex flex-wrap p-5 gap-10">
         <button class="group p-1 rounded w-fit bg-go-outerspace hover:bg-gradient-green-yellow-pink ">

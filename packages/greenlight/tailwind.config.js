@@ -23,7 +23,8 @@ module.exports = {
         "go-glow": "var(--GO-glow)",
         "go-outerspace": "var(--GO-outerspace)",
         "go-tan": "var(--GO-tan)",
-        "go-gold": "var(--GO-gold)"
+        "go-gold": "var(--GO-gold)",
+        "go-yellow": "var(--GO-yellow)"
       },
 
       backgroundImage: {
