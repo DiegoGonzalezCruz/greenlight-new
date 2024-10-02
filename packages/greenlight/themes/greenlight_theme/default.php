@@ -9,6 +9,7 @@ use Concrete\Core\Area\Area;
 
 <?php $this->inc('elements/typography.php'); ?>
 <?php $this->inc('elements/buttons.php'); ?>
+<?php $this->inc('elements/cards.php'); ?>
 
 
 
