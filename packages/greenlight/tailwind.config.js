@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     borderRadius: {
       none: "0",
+      small: "12px",
+      "small-internal": "6px",
       DEFAULT: "75px",
       full: "9999px"
     },
@@ -29,7 +31,9 @@ module.exports = {
         "gradient-green-yellow-pink-1": "var(--gradient-green-yellow-pink-1)",
         "gradient-green-yellow": "var(--gradient-green-yellow)",
         "gradient-pink-yellow": "var(--gradient-pink-yellow)",
-        "gradient-teal-pink": "var(--gradient-teal-pink)"
+        "gradient-teal-pink": "var(--gradient-teal-pink)",
+        "dark-gradient":
+          "linear-gradient(178deg, rgba(0, 0, 0, 0.08) 26.16%, rgba(0, 0, 0, 0.80) 98.53%), lightgray -84.921px 0px / 211.331% 100% no-repeat"
       }
     }
   },
